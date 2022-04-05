@@ -333,3 +333,11 @@ textarea {
     --btn-altern-font-color: var(--color-dark);
     --btn-altern-bg-color: var(--color-warning-darker);
 }
+
+.hide {
+    opacity: 0;
+}
+
+@media(min-width:780px){
+
+}
