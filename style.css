@@ -1,4 +1,25 @@
-/*****VARIABLES*****/
+
+h1 { font-size: 3rem; }
+
+.side-form {
+    width: 100%;
+    background-color: #001542;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    --gap-cards: 1em;
+    margin-inline: calc(-1 * var(--gap-cards));
+    row-gap: 1em;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+@media(min-width:780px){/*****VARIABLES*****/
 :root {
     --color-primary: #001542;
     --color-primary-darker: #01091a;
@@ -338,6 +359,4 @@ textarea {
     opacity: 0;
 }
 
-@media(min-width:780px){
-
-}
+} 

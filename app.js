@@ -10,7 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function submitIngredient(e){
-    
+    e.preventDefault();
+    e.stopPropagation();
+    let receta = {
+        id: Date.now(),
+        title: formRec["title"].value,
+        
+    };
 
 }
 
